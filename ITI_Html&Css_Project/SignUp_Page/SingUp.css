@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+body{
+    height:100vh;
+    background-color: rgb(193, 190, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-card{
+    width: 60%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;   
+}
+.signup-left{
+    width: 50%;
+    height: 100%;
+    background-image: 
+    url("../images/iti5.jpg");
+    background-size: cover;
+    background-position: center;
+} 
+.signup-right{
+    font-family: 'Ubuntu' , sans-serif ;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup-right h1{
+    font-family: 'Ubuntu' , sans-serif ;
+    color: #555;
+    font-size: 30px;
+    font-weight: bold;
+}
+.form-group{
+    font-family: 'Ubuntu' , sans-serif ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup-right input{
+    font-family: 'Ubuntu' , sans-serif ;
+    width: 300px;
+    height: 25px;
+    margin: 10px;
+    padding: 20px 15px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid lightgray;
+    border-radius: 0px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+}
+.signup-right input:focus{
+    background-color: transparent;
+    color: #000;
+    font-weight: 500;
+    
+}
+
+.signup-right button{
+    font-family: 'Ubuntu' , sans-serif ;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    width: 120px;
+    height: 31px;
+    margin-top: 15px;
+    border-radius: 2px;
+    border: none;
+    background: rgb(156, 152, 228);
+    transition: all 1s;
+}
+.signup-right button:hover{
+    transform: scale(1.15);
+    border-radius: 40px;
+}
+.signup-right span{
+    font-family: 'Ubuntu' , sans-serif ;
+    color: #555;
+    font-size: 15px;
+    margin: 5px;
+}
+.signup-right span a{
+    font-family: 'Ubuntu' , sans-serif ;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+.signup-right span a:hover{
+    text-decoration: underline;
+}
+.forName, .forUsername , .forPassword{
+    font-family: 'Ubuntu' , sans-serif ;
+    color: brown;
+    font-size: 14px;
+    margin-left: 20px;
+   
+}
+
+/* responsive */
+
+@media (max-width:1200px){
+    .signup-right input{
+        width: 280px;
+    }
+}
+
+@media (max-width:1100px){
+    .signup-right input{
+        width: 260px;
+    }
+}
+
+@media (max-width:1000px){
+    body{
+        background-image: 
+        url("../images/iti5.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .signup-card{
+        height: 89vh;
+    }
+    .signup-left{
+      display: none;
+    } 
+    .signup-right{
+        width: 100vw;
+        height: 80vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup-right h1{
+       margin-top: 30px;
+    }
+    .signup-right input{
+        width: 340px;
+        height: 30px;
+        margin: 12px 0px;
+        padding: 15px;
+    }
+}
+
+@media (max-width:800px){
+    body{
+        background-image: 
+        url("../images/iti5.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .signup-card{
+        width: 100%;
+        height: 100%;
+    }
+    .signup-left{
+        display: none;
+    } 
+    .signup-right{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.281)),
+        url("../images/iti5.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signup-right h1{
+        color: #fff;
+        margin: 15px 30px 15px 15px;
+        font-weight: bold;
+    }
+    .signup-right form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .signup-card input{
+        color: #fff;
+        background: none;
+        height: 50px;
+        margin:25px 15px ;
+    }
+    .signup-card input:focus{
+        color: #fff;
+    }
+    .signup-card input::placeholder{
+        color: #fff;
+
+    }
+    .signup-right button{
+        font-size: 17px;
+        color: #000;
+        width: 120px;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-top:20px;
+        border-radius: 15px;
+        background: rgb(228, 217, 217);
+    }
+    
+    .signup-right span{
+        color: #fff;
+        font-size: 18px;
+    }
+    .signup-right span a{
+        color: #fff;
+    }
+    .invalid-signup{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:550px){
+    .signup-right span{
+        font-size: 16px;
+    }
+}

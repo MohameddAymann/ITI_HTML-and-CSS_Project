@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/iti2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding-top: 15px;
+    font-family: 'Ubuntu' , sans-serif ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+nav h3{
+    font-family: 'Ubuntu' , sans-serif ;
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+.typing-animation{
+    font-size: 35px;
+    color: brown;
+    font-family: 'Ubuntu' , sans-serif ;
+}
+.firstSection{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Ubuntu' , sans-serif ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/iti2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ button{
+    font-family: 'Ubuntu' , sans-serif ;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    width: 135px;
+    height: 35px;
+    margin-top: 25px;
+    border-radius: 4px;
+    border: none;
+    background: rgb(156, 152, 228);
+    transition: all 1s;
+}
+
+ button:hover{
+    transform: scale(1.10);
+    border-radius: 40px;
+}
+
+@media (max-width:800px){
+    .firstSection h1{
+        font-size: 32px;
+    }
+    .typing-animation{
+        font-size: 30px;
+    }
+}
+@media (max-width:650px){
+    .firstSection h1{
+        font-size: 24px;
+    }
+    .firstSection button{
+        font-size: 18px;
+        width: 130px;
+        height: 33px;
+    }
+    .typing-animation{
+        font-size: 29px;
+    }
+}
+@media (max-width:600px){
+    .typing-animation{
+        font-size: 25px;
+    }
+}
+@media (max-width:550px){
+    .typing-animation{
+        font-size: 18px;
+    }
+    nav h3{
+        margin-left: 15px;
+        font-size: 37px;
+    }
+    .firstSection h1{
+        font-size: 23px;
+    }
+}
+@media (max-width:500px){
+    .firstSection h1{
+        font-size: 21px;
+    }
+    .firstSection button{
+        font-size: 18px;
+        width: 120px;
+        height: 32px;
+    }
+    .typing-animation{
+        font-size: 16px;
+    }
+}
+@media (max-width:400px){
+    .firstSection h1{
+        font-size: 19px;
+    }
+    .firstSection button{
+        font-size: 17px;
+        width: 110px;
+        height: 32px;
+    }
+}
+@media (max-width:350px){
+    .typing-animation{
+        font-size: 13px;
+    }
+    .firstSection h1{
+        font-size: 18px;
+    }
+}
